@@ -76,8 +76,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="subl ~/.zshrc"
+alias docker-containers-delete-all="docker rm $(docker ps -aq)"
+alias docker-containers="docker ps -a"
 
 # Rbenv
 eval "$(rbenv init -)"
