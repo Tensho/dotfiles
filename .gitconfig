@@ -10,3 +10,4 @@
 	default = current
 [rebase]
 	autosquash = true
+  autostash = true
