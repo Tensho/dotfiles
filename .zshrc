@@ -79,6 +79,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 alias zshconfig="subl ~/.zshrc"
 alias docker-containers-delete-all="docker rm $(docker ps -aq)"
 alias docker-containers="docker ps -a"
+alias pg-users="psql template1 -c '\du'"
 
 # Rbenv
 eval "$(rbenv init -)"
