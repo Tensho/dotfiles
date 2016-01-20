@@ -20,5 +20,15 @@
 [rebase]
   autosquash = true
   autostash = true
+[help]
+	autocorrect = 1
+[branch]
+	autosetuprebase = always
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[credential]
+	helper = osxkeychain
 [core]
 	excludesfile = ~/.gitignore
