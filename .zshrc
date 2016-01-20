@@ -51,8 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -77,8 +76,15 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 #
 # Example aliases
 alias zshconfig="subl ~/.zshrc"
-alias docker-containers-delete-all="docker rm $(docker ps -aq)"
-alias docker-containers="docker ps -a"
+# RubyMine
+export RUBYMINE_VERSION="80"
+export RUBYMINE_APP_PATH="/Applications/RubyMine.app/Contents"
+export RUBYMINE_PLUGINS_PATH="$HOME/Library/Application\ Support/RubyMine$RUBYMINE_VERSION"
+export RUBYMINE_PREFERENCES_PATH="$HOME/Library/Preferences/RubyMine$RUBYMINE_VERSION"
+# Docker
+# alias docker-containers="docker ps -a"
+# alias docker-containers-delete-all="docker rm $(docker ps -aq)"
+# Postgres
 alias pg-users="psql template1 -c '\du'"
 
 # Rbenv
