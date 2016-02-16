@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew sublime git docker)
+plugins=(brew sublime git docker nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,3 +94,6 @@ export EDITOR='subl -w'
 export BUNDLER_EDITOR="subl -w"
 
 export LANG="en_US.UTF-8"
+
+export NVM_DIR="/Users/tensho/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
