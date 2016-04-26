@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew sublime git docker nvm)
+plugins=(brew sublime git bundler docker nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -93,7 +93,6 @@ eval "$(rbenv init -)"
 export EDITOR='subl -w'
 export BUNDLER_EDITOR="subl -w"
 
-export LANG="en_US.UTF-8"
-
+# Nvm
 export NVM_DIR="/Users/tensho/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
