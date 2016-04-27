@@ -16,120 +16,61 @@
   "ssh_config_ignore_keywords": [  ],
   "hosts": [
     {
-      "puppet-master": [
+      "puppetmaster": [
         {
-          "name": "Tensho",
-          "cmd": "ssh tensho@10.0.7.215",
+          "name": "Production",
+          "cmd": "ssh deploy@10.0.7.215",
+          "inTerminal": "current"
+        }
+      ],
+      "async-workers": [
+        {
+          "name": "Staging",
+          "cmd": "ssh deploy@10.0.2.109",
           "inTerminal": "current"
         },
         {
-          "name": "Deploy",
-          "cmd": "ssh deploy@10.0.7.215",
+          "name": "Production",
+          "cmd": "ssh deploy@10.0.2.110",
+          "inTerminal": "current"
+        }
+      ],
+      "www-site": [
+        {
+          "name": "Staging",
+          "cmd": "ssh deploy@10.0.5.249",
+          "inTerminal": "current"
+        },
+        {
+          "name": "Production",
+          "cmd": "ssh deploy@10.0.5.191",
+          "inTerminal": "current"
+        }
+      ],
+      "complaint-app": [
+        {
+          "name": "Staging",
+          "cmd": "ssh deploy@10.0.6.138",
+          "inTerminal": "current"
+        },
+        {
+          "name": "Production",
+          "cmd": "ssh deploy@10.0.6.235",
           "inTerminal": "current"
         }
       ],
       "decider": [
         {
-          "Web": [
-            {
-              "Staging": [
-                {
-                  "name": "Tensho",
-                  "cmd": "ssh tensho@10.0.5.34",
-                  "inTerminal": "current"
-                },
-                {
-                  "name": "Deploy",
-                  "cmd": "ssh deploy@10.0.5.34",
-                  "inTerminal": "current"
-                }
-              ]
-            },
-            {
-              "Production": [
-                {
-                  "name": "Tensho",
-                  "cmd": "ssh tensho@10.0.5.98",
-                  "inTerminal": "current"
-                },
-                {
-                  "name": "Deploy",
-                  "cmd": "ssh deploy@10.0.5.98",
-                  "inTerminal": "current"
-                }
-              ]
-            }            
-          ]
+          "name": "Staging",
+          "cmd": "ssh deploy@10.0.5.34",
+          "inTerminal": "current"
+        },
+        {
+          "name": "Production",
+          "cmd": "ssh deploy@10.0.5.98",
+          "inTerminal": "current"
         }
       ],
-      "www-site": [
-        {
-          "Web": [
-            {
-              "Staging": [
-                {
-                  "name": "Tensho",
-                  "cmd": "ssh tensho@10.0.5.249",
-                  "inTerminal": "current"
-                },
-                {
-                  "name": "Deploy",
-                  "cmd": "ssh deploy@10.0.5.249",
-                  "inTerminal": "current"
-                }
-              ]
-            },
-            {
-              "Production": [
-                {
-                  "name": "Tensho",
-                  "cmd": "ssh tensho@10.0.5.191",
-                  "inTerminal": "current"
-                },
-                {
-                  "name": "Deploy",
-                  "cmd": "ssh deploy@10.0.5.191",
-                  "inTerminal": "current"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "complaint-app": [
-        {
-          "Web": [
-            {
-              "Staging": [
-                {
-                  "name": "Tensho",
-                  "cmd": "ssh tensho@10.0.6.138",
-                  "inTerminal": "current"
-                },
-                {
-                  "name": "Deploy",
-                  "cmd": "ssh deploy@10.0.6.138",
-                  "inTerminal": "current"
-                }
-              ]
-            },
-            {
-              "Production": [
-                {
-                  "name": "Tensho",
-                  "cmd": "ssh tensho@10.0.6.235",
-                  "inTerminal": "current"
-                },
-                {
-                  "name": "Deploy",
-                  "cmd": "ssh deploy@10.0.6.235",
-                  "inTerminal": "current"
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }
