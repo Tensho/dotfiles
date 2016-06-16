@@ -23,6 +23,18 @@
           "inTerminal": "current"
         }
       ],
+      "api-mandrill": [
+        {
+          "name": "Staging",
+          "cmd": "ssh deploy@10.0.2.8",
+          "inTerminal": "current"
+        },
+        {
+          "name": "Production",
+          "cmd": "ssh deploy@10.0.2.209",
+          "inTerminal": "current"
+        }
+      ],
       "async-workers": [
         {
           "name": "Staging",
