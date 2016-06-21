@@ -1,2 +1,2 @@
-DOTFILES_DIRS="~/Projects/dotfiles"
+DOTFILES_DIRS="Projects/dotfiles"
 EXCLUDES="README.md"
