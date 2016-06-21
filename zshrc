@@ -98,3 +98,6 @@ export NVM_DIR="/Users/tensho/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 unsetopt nomatch
+
+# Aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
