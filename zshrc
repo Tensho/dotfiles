@@ -101,3 +101,11 @@ unsetopt nomatch
 
 # Aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# iTerm2 shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# iTerm2 user-defined variables
+function iterm2_print_user_vars() {
+  iterm2_set_user_var rubyVersion $(rbenv version)
+}
