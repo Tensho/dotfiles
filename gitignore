@@ -1,2 +1,5 @@
 .idea
 .ruby-version
+
+# macOS
+.DS_Store
