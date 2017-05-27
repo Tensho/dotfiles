@@ -2,16 +2,17 @@
   name = Andrew Babichev
   email = andrew.babichev@gmail.com
 [alias]
-  fa = fetch -p --all
-  st = status -sb
+  fa = fetch --prune --all --tags
+  st = status --short --branch
+  sh = stash --keep-index --include-untracked
   co = checkout
   br = branch
-  lg = log --oneline --decorate --graph
+  lg = log --oneline --decorate --graph --all
   orphans = fsck --full
   df = diff --word-diff
   r = reset
   r1 = reset HEAD^
-  cp = cherry-pick
+  cp = cherry-pick -x --sign-of
   cl = clone
   ci = commit --allow-empty
   rb = rebase -i --keep-empty
