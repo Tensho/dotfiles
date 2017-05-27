@@ -3,4 +3,8 @@ alias path='echo $PATH | tr -s ":" "\n"'
 alias brew-list='brew ls --ful-name --versions'
 alias be='bundle exec'
 alias git=hub
+
+alias archive='tar -cvzf' # tmp/emails.tar.gz tmp/emails/*
+alias unarchive='tar -xvf'  # tmp/emails.tar.gz tmp/
+
 alias gpg-im='gpg --symmetric --armor --cipher-algo AES256 --recipient'
