@@ -1,6 +1,6 @@
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
-alias brew-list='brew ls --ful-name --versions'
+alias bls='brew ls --full-name --versions'
 alias be='bundle exec'
 alias git=hub
 
