@@ -109,3 +109,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 function iterm2_print_user_vars() {
   iterm2_set_user_var rubyVersion $(rbenv version)
 }
+
+export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities

@@ -36,3 +36,7 @@
 	excludesfile = ~/.gitignore
 [color]
   ui = true
+[diff]
+  tool = araxis
+[merge]
+  tool = araxis
