@@ -7,4 +7,6 @@ alias git=hub
 alias archive='tar -cvzf' # tmp/emails.tar.gz tmp/emails/*
 alias unarchive='tar -xvf'  # tmp/emails.tar.gz tmp/
 
-alias gpg-im='gpg --symmetric --armor --cipher-algo AES256 --recipient'
+alias gpg-im-encrypt='gpg --armor --recipient' # Ctrl + D
+alias gpg-im-decrypt='gpg --decrypt'           # Ctrl + D
+
