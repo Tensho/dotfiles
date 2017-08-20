@@ -90,9 +90,11 @@ alias pg-users="psql template1 -c '\du'"
 # Rbenv
 eval "$(rbenv init -)"
 
+# Default editor
 export EDITOR='subl -w'
 export BUNDLER_EDITOR="subl -w"
 
+# ?
 unsetopt nomatch
 
 # Aliases
@@ -111,5 +113,8 @@ PERL5LIB="/Users/tensho/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5L
 PERL_LOCAL_LIB_ROOT="/Users/tensho/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/tensho/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/tensho/perl5"; export PERL_MM_OPT;
+
+export AWS_DEFAULT_PROFILE="resolver"
+export AWS_DEFAULT_REGION="eu-west-1"
 
 export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
