@@ -15,7 +15,8 @@
   cp = cherry-pick -x --sign-of
   cl = clone
   ci = commit --allow-empty
-  rb = rebase -i --keep-empty
+  rb = rebase
+  rbi = rebase -i --keep-empty
 [push]
   default = current
 [rebase]
