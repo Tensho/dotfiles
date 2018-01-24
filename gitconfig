@@ -44,3 +44,5 @@
   tool = araxis
 [merge]
   tool = araxis
+[commit]
+	gpgsign = true
