@@ -65,6 +65,7 @@ cask "slack"
 cask "spectacle"
 cask "tunnelblick"
 cask "virtualbox"
+cask "atom"
 
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
