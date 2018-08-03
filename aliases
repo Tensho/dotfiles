@@ -1,3 +1,6 @@
+alias zshconfig='subl ~/.zshrc'
+alias brewconfig='subl ~/Brewfile'
+
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
@@ -22,11 +25,11 @@ alias unarchive='tar -xvf'  # tmp/emails.tar.gz tmp/
 
 alias gpg-im-encrypt='gpg --armor --recipient' # Ctrl + D
 alias gpg-im-decrypt='gpg --decrypt'           # Ctrl + D
+alias gpg-export-key='gpg --armor --export'    # andrew.babichev@gmail.com
 
 alias dc='docker-compose'
-alias docker-dangling-images='docker images -f "dangling=true" -q'
-# docker rmi $(docker-dangling-images)
 alias docker-containers='docker ps -a -q'
-# docker stop $(docker-containers)
-# docker rm $(docker-containers)
 alias docker-ps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Size}}\t{{.Ports}}"'
+alias docker-host='screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty'
+alias aws="docker run --rm -v ~/.aws:/root/.aws -e AWS_PROFILE=resolver mesosphere/aws-cli"
+
