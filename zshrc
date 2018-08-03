@@ -1,14 +1,27 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/tensho/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -45,13 +58,19 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew sublime git docker capistrano)
+plugins=(
+  git
+  docker
+  sublime
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -67,7 +86,7 @@ export LANG=en_US.UTF-8
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -75,17 +94,12 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="subl ~/.zshrc"
-# RubyMine
-export RUBYMINE_VERSION="80"
-export RUBYMINE_APP_PATH="/Applications/RubyMine.app/Contents"
-export RUBYMINE_PLUGINS_PATH="$HOME/Library/Application\ Support/RubyMine$RUBYMINE_VERSION"
-export RUBYMINE_PREFERENCES_PATH="$HOME/Library/Preferences/RubyMine$RUBYMINE_VERSION"
-# Docker
-# alias docker-containers="docker ps -a"
-# alias docker-containers-delete-all="docker rm $(docker ps -aq)"
-# Postgres
-alias pg-users="psql template1 -c '\du'"
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+[[ -f ~/.aliases ]] && source ~/.aliases
+
+# To eleminate "error: gpg failed to sign the data"
+# export GPG_TTY=$(tty)
 
 # Rbenv
 eval "$(rbenv init -)"
@@ -94,27 +108,10 @@ eval "$(rbenv init -)"
 export EDITOR='subl -w'
 export BUNDLER_EDITOR="subl -w"
 
-# ?
-unsetopt nomatch
-
-# Aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
-
 # iTerm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+source ~/.iterm2_shell_integration.zsh
 
-# iTerm2 user-defined variables
-function iterm2_print_user_vars() {
-  iterm2_set_user_var rubyVersion $(rbenv version)
-}
-
-PATH="/Users/tensho/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/tensho/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/tensho/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/tensho/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/tensho/perl5"; export PERL_MM_OPT;
-
-export AWS_DEFAULT_PROFILE="resolver"
-export AWS_DEFAULT_REGION="eu-west-1"
-
-export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
+# iTerm2 user-defined variables (iTerm2 badges)
+# function iterm2_print_user_vars() {
+#   iterm2_set_user_var rubyVersion $(rbenv version)
+# }
