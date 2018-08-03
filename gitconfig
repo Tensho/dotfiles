@@ -19,32 +19,21 @@
   fx = commit --fixup
   rb = rebase
   rbi = rebase -i --keep-empty
-[push]
-  default = current
 [rebase]
   autosquash = true
   autostash = true
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [branch]
-	autosetuprebase = always
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  autosetupmerge = always
+  autosetuprebase = always
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [color]
   ui = true
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-[diff]
-  tool = araxis
-[merge]
-  tool = araxis
 [commit]
-	gpgsign = true
+  gpgsign = true
+[push]
+  default = current
