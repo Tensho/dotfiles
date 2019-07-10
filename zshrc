@@ -115,3 +115,5 @@ source ~/.iterm2_shell_integration.zsh
 # function iterm2_print_user_vars() {
 #   iterm2_set_user_var rubyVersion $(rbenv version)
 # }
+
+export HOMEBREW_NO_INSTALL_CLEANUP=1
