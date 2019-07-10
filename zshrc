@@ -64,6 +64,7 @@ plugins=(
   sublime
   zsh-autosuggestions
   zsh-syntax-highlighting
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
