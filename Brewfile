@@ -1,10 +1,15 @@
 tap "thoughtbot/formulae"
 
+brew "ccat"
 brew "tree"
 brew "pstree"
 brew "thoughtbot/formulae/rcm"
 brew "hub"
 brew "rbenv"
+brew "awscli"
+brew "terraform"
+brew "terragrunt"
+brew "packer"
 
 cask "google-chrome"
 cask "1password"
