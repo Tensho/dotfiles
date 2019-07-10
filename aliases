@@ -31,5 +31,14 @@ alias dc='docker-compose'
 alias docker-containers='docker ps -a -q'
 alias docker-ps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Size}}\t{{.Ports}}"'
 alias docker-host='screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty'
-alias aws="docker run --rm -v ~/.aws:/root/.aws -e AWS_PROFILE=resolver mesosphere/aws-cli"
 
+alias mysql-show-table='mysqlshow -uroot' # mysqlshow -uroot resolverapp_development users
+
+get-aws-key-pair-fingerprint() {
+  openssl pkcs8 -in $1 -inform PEM -outform DER -topk8 -nocrypt | openssl sha1 -c
+}
+
+alias get-aws-key-pair-pubkey='ssh-keygen -y -f'
+
+alias tf='terraform'
+alias tg='terragrunt'
