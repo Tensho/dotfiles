@@ -95,9 +95,18 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -f ~/.aliases ]] && source ~/.aliases
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+
+alias path='echo $PATH | tr -s ":" "\n"'
+
+alias dir-size='du -sh'
+
+alias lsof-connections='lsof -i | grep -E "(LISTEN|ESTABLISHED)"'
+alias stat-mod-hex='stat -f %Mp%Lp '
+
+alias archive='tar -cvzf' # tmp/emails.tar.gz tmp/emails/*
+alias unarchive='tar -xvf'  # tmp/emails.tar.gz tmp/
 
 # To eleminate "error: gpg failed to sign the data"
 # export GPG_TTY=$(tty)
