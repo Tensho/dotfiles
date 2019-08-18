@@ -60,11 +60,18 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  github
+  ruby
+  bundler
+  rails
+  go
   docker
+  docker-compose
   sublime
   zsh-autosuggestions
   zsh-syntax-highlighting
   terraform
+  terragrunt
 )
 
 source $ZSH/oh-my-zsh.sh
