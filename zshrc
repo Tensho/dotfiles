@@ -77,11 +77,12 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='subl -w'
+  export BUNDLER_EDITOR="subl -w"
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -113,10 +114,6 @@ alias unarchive='tar -xvf'  # tmp/emails.tar.gz tmp/
 
 # Rbenv
 eval "$(rbenv init -)"
-
-# Default editor
-export EDITOR='subl -w'
-export BUNDLER_EDITOR="subl -w"
 
 # iTerm2 shell integration
 source ~/.iterm2_shell_integration.zsh
