@@ -115,12 +115,14 @@ alias unarchive='tar -xvf'  # tmp/emails.tar.gz tmp/
 # Rbenv
 eval "$(rbenv init -)"
 
-# iTerm2 shell integration
+# iTerm2 - Shell Integration
 source ~/.iterm2_shell_integration.zsh
 
-# iTerm2 user-defined variables (iTerm2 badges)
+# iTerm2 - Badge (user-defined variables)
 # function iterm2_print_user_vars() {
 #   iterm2_set_user_var rubyVersion $(rbenv version)
+#   iterm2_set_user_var terraformWorkspace $(terraform workspace show)
 # }
 
+# Homebrew
 export HOMEBREW_NO_INSTALL_CLEANUP=1
