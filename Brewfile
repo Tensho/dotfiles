@@ -1,5 +1,7 @@
 tap "thoughtbot/formulae"
 
+brew "git" # Apple's git is usually outdated and lacks of CVE patches
+
 brew "ccat"
 brew "tree"
 brew "pstree"
