@@ -1,6 +1,7 @@
 [user]
   name = Andrew Babichev
   email = andrew.babichev@gmail.com
+  signingkey = Andrew Babichev <andrew.babichev@gmail.com>
 [alias]
   fa = fetch --prune --all --tags
   st = status --short --branch
