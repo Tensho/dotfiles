@@ -156,6 +156,10 @@ BROWSER=chrome
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
+# 1Password CLI biometric unlock
+# https://developer.1password.com/docs/cli/about-biometric-unlock
+OP_BIOMETRIC_UNLOCK_ENABLED=true
+
 # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 # TODO: Remove after upgrade to k8s v1.25
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
