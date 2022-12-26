@@ -1,0 +1,39 @@
+# https://github.com/mathiasbynens/dotfiles/blob/main/.macos
+
+################################################################################
+# Typing
+################################################################################
+
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+defaults write NSGlobalDomain NSUserDictionaryReplacementItems -array \
+    '{on = 1; replace = "^^"; with = "^_^";}' \
+    '{on = 1; replace = "xyz"; with = "xxxyyyzzz";}'
+
+defaults write NSGlobalDomain NSUserKeyEquivalents -dict-add \
+    "System Preferences..." "@~,"
+
+################################################################################
+# Mouse
+################################################################################
+
+defaults write NSGlobalDomain AppleEnableMouseSwipeNavigateWithScrolls -bool true
+
+################################################################################
+# Screenshots
+################################################################################
+
+defaults write com.apple.screencapture location ~/Downloads
+
+################################################################################
+# Safari
+################################################################################
+
+# Enable the Developer menu and the Web Inspector
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+
+defaults write com.apple.Safari HomePage https://ru.wikipedia.org/wiki
+
+defaults write com.apple.Safari ReadingListSaveArticlesOfflineAutomatically -bool true
