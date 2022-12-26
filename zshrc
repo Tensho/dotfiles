@@ -72,6 +72,8 @@ plugins=(
   zsh-syntax-highlighting
   terraform
   terragrunt
+  kubectl
+  gcloud
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -133,3 +135,11 @@ source ~/.iterm2_shell_integration.zsh
 
 # Homebrew
 export HOMEBREW_NO_INSTALL_CLEANUP=1
+
+# Google Cloud SDK (gcloud)
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+
+# https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
+# TODO: Remove after upgrade to k8s v1.25
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
