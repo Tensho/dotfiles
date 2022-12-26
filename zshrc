@@ -140,7 +140,9 @@ function iterm2_print_user_vars() {
 }
 
 # Homebrew
+export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_INSTALL_UPGRADE=1
 
 # Google Cloud SDK (gcloud)
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
