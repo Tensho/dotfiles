@@ -119,6 +119,8 @@ alias stat-mod-hex='stat -f %Mp%Lp '
 alias archive='tar -cvzf' # tmp/emails.tar.gz tmp/emails/*
 alias unarchive='tar -xvf'  # tmp/emails.tar.gz tmp/
 
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --kiosk'
+
 # To eleminate "error: gpg failed to sign the data"
 # export GPG_TTY=$(tty)
 
