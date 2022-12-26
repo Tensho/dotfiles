@@ -161,6 +161,9 @@ source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completio
 # https://developer.1password.com/docs/cli/about-biometric-unlock
 OP_BIOMETRIC_UNLOCK_ENABLED=true
 
+# Terraform: Too many open files in system
+ulimit -n 1024
+
 # Add timestamps to commands
 PROMPT='%{$fg[yellow]%}[%D{%T}] '$PROMPT
 
