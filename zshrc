@@ -73,6 +73,7 @@ plugins=(
   terraform
   terragrunt
   kubectl
+  aws
   gcloud
 )
 
