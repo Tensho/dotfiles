@@ -166,3 +166,18 @@ PROMPT='%{$fg[yellow]%}[%D{%T}] '$PROMPT
 # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 # TODO: Remove after upgrade to k8s v1.25
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+# https://github.com/warrensbox/terraform-switcher#automation
+# Automatically switch terraform with zsh
+load-tfswitch() {
+  if [ -f "terragrunt.hcl" ]; then
+    tfswitch
+  fi
+
+  if [ -f ".terraform-version" ]; then
+    tfswitch
+  fi
+}
+
+add-zsh-hook chpwd load-tfswitch
+load-tfswitch
