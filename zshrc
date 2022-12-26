@@ -129,10 +129,13 @@ eval "$(rbenv init -)"
 source ~/.iterm2_shell_integration.zsh
 
 # iTerm2 - Badge (user-defined variables)
-# function iterm2_print_user_vars() {
-#   iterm2_set_user_var rubyVersion $(rbenv version)
-#   iterm2_set_user_var terraformWorkspace $(terraform workspace show)
-# }
+# https://medium.com/hackernoon/dont-lose-your-head-with-iterm2-4a6fafbca6b
+function iterm2_print_user_vars() {
+  iterm2_set_user_var rubyVersion $(rbenv version)
+  iterm2_set_user_var currentGCPProject $(gcloud config get-value project)
+  # Interpolate user variable to badge:
+  # iTerm2 –> Preferences –> Profiles –> General –> Badge: \(user.currentGCPProject)
+}
 
 # Homebrew
 export HOMEBREW_NO_INSTALL_CLEANUP=1
