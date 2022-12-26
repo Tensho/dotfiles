@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:$PATH # Homebrew Apple silicon (M1)
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/tensho/.oh-my-zsh
