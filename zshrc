@@ -185,3 +185,6 @@ load-tfswitch() {
 
 add-zsh-hook chpwd load-tfswitch
 load-tfswitch
+
+# https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
