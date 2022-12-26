@@ -149,6 +149,9 @@ function yaml2json()
   ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' $*
 }
 
+# For capybara-screenshot
+BROWSER=chrome
+
 # Google Cloud SDK (gcloud)
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
