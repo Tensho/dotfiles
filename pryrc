@@ -1,8 +1,8 @@
 begin
-  require 'awesome_print'
-  AwesomePrint.pry!
+  require 'amazing_print'
+  AmazingPrint.pry!
 rescue LoadError
-  puts 'WARNING: There was an attempt to load "awesome_print" gem, but it\'s not installed'
+  puts 'WARNING: There was an attempt to load "amazing_print" gem, but it\'s not installed'
 end
 
 # https://github.com/deivid-rodriguez/pry-byebug#matching-byebug-behaviour
@@ -17,3 +17,5 @@ end
 Pry::Commands.command /^$/, "repeat last command" do
   _pry_.run_command Pry.history.to_a.last
 end
+
+puts 'Loaded ~/.pryrc'
