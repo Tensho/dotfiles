@@ -188,3 +188,5 @@ load-tfswitch
 
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
+# Autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
