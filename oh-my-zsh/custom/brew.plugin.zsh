@@ -1,4 +1,4 @@
-alias brew-list='brew ls --full-name --versions'
+alias brew-list='brew ls --versions'
 # Used function instead of alias to not fight with '' and "" escaping.
 # Used optional keyword "function" because of dashed name.
 function brew-deps {
