@@ -41,3 +41,5 @@
   default = current
 [interactive]
 	diffFilter = diff-so-fancy --patch
+[init]
+	defaultBranch = main
