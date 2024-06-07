@@ -5,7 +5,7 @@ brew "git" # Apple's git is usually outdated and lacks of CVE patches
 brew "bat"
 brew "tree"
 brew "pstree"
-brew "thoughtbot/formulae/rcm"
+brew "rcm"
 brew "hub"
 # brew "remotemobprogramming/brew/mob"
 # brew "zaquestion/tap/lab" # Like hub, but for GitLab
@@ -20,6 +20,7 @@ brew "k6" # Load testing
 brew "nmap" # Nework ports scanning
 brew "pre-commit"
 brew "asciinema"
+brew "inetutils' # ftp
 
 # Terraform / Terragrunt
 brew "warrensbox/tap/tfswitch" # Terraform installer & switcher
@@ -43,7 +44,7 @@ brew "dive" # Introspect Docker images
 brew "k9s"
 
 # LiveLink
-brew "lastpass-cli"
+brew "1password-cli"
 brew "saml2aws"
 cask "google-cloud-sdk"
 cask "chef-workstation" # Run "uninstall_chef_workstation" in terminal in case of deletion
@@ -65,6 +66,7 @@ cask "viber"
 cask "zoom"
 cask "whatsapp"
 cask "rubymine"
+cask "goland"
 cask "the-unarchiver"
 cask "transmission"
 cask "docker"
@@ -91,3 +93,6 @@ cask "wireshark"
 cask "gns3" # network simulator
 cask "zenmap" # Network ports scanning on top of nmap (very old fashion)
 cask "wifi-explorer" # Analysize Wi-Fi networks around
+
+# Games
+cask "battle-net"
