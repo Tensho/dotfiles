@@ -36,7 +36,7 @@
 [color]
   ui = true
 [commit]
-  gpgsign = true
+  gpgsign = false
 [push]
   default = current
 [interactive]
